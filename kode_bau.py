@@ -1,24 +1,17 @@
-import os
-import sys
-import math
-
-x = 10
+"""Modul contoh yang sudah diperbaiki sesuai PEP 8."""
 
 
-def Bad_Function_Name(A, B, C, D, E, F):
-    global x
-    l = 1
-    O = 0
-    if A == True:
-        if B == False:
-            if C == None:
-                try:
-                    print(eval("A + B"))
-                    res = E[0] + F + l + O
-                except:
-                    pass
-    else:
-        return None
+def jumlahkan(a, b, c, d, e, f):
+    """Menjumlahkan enam nilai."""
+    total = a + b + c + d + e + f
+    return total
 
 
-Bad_Function_Name(True, False, None, 1, [2], 3)
+def main():
+    """Fungsi utama."""
+    hasil = jumlahkan(1, 2, 3, 4, 5, 6)
+    print(f"Hasil: {hasil}")
+
+
+if __name__ == "__main__":
+    main()
